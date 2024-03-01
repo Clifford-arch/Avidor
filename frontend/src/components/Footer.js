@@ -1,4 +1,6 @@
 import { Flex, Text, Icon, Link } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
 import {
   PiInstagramLogoFill,
   PiFacebookLogoFill,
@@ -39,7 +41,12 @@ const Footer = () => {
           color="#FAD6A5"
           _hover={{ textDecor: "none", color: "#F7E7CE" }}
         >
-          <Icon as={PiInstagramLogoFill} w={6} h={6} />
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Icon as={PiInstagramLogoFill} w={6} h={6} />
+          </motion.div>
         </Link>
 
         <Link
@@ -54,7 +61,12 @@ const Footer = () => {
           color="#FAD6A5"
           _hover={{ textDecor: "none", color: "#F7E7CE" }}
         >
-          <Icon as={PiFacebookLogoFill} w={6} h={6} />
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Icon as={PiFacebookLogoFill} w={6} h={6} />
+          </motion.div>
         </Link>
         <Link
           href="https://www.facebook.com/"
@@ -68,7 +80,12 @@ const Footer = () => {
           color="#FAD6A5"
           _hover={{ textDecor: "none", color: "#F7E7CE" }}
         >
-          <Icon as={PiMessengerLogoFill} w={6} h={6} />
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Icon as={PiMessengerLogoFill} w={6} h={6} />
+          </motion.div>
         </Link>
         <Link
           href="https://www.facebook.com/"
@@ -82,7 +99,12 @@ const Footer = () => {
           color="#FAD6A5"
           _hover={{ textDecor: "none", color: "#F7E7CE" }}
         >
-          <Icon as={PiPhoneFill} w={6} h={6} />
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Icon as={PiPhoneFill} w={6} h={6} translate="2" />
+          </motion.div>
         </Link>
       </Flex>
     </Flex>

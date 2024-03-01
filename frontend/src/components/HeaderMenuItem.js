@@ -1,22 +1,28 @@
 import { Icon, Link } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const HeaderMenuItem = ({ url, label, icon }) => {
   return (
-    <Link
-      href={url}
-      fontSize="md"
-      letterSpacing="wide"
-      textTransform="uppercase"
-      mb={{ base: "2", md: "0" }}
-      mr="5"
-      display="flex"
-      alignItems="center"
-      color="#FAD6A5"
-      _hover={{ textDecor: "none", color: "#F7E7CE" }}
-    >
-      <Icon as={icon} mr="2" w="4" h="4" />
-      {label}
-    </Link>
+    <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+      <Link
+        href={url}
+        fontSize="md"
+        letterSpacing="wide"
+        textTransform="uppercase"
+        mb={{ base: "2", md: "0" }}
+        mr="5"
+        display="flex"
+        alignItems="center"
+        color="#800020"
+        _hover={{ textDecor: "none", bgColor: "#F7E7CE" }}
+        bgColor="#FAD6A5"
+        borderRadius="full"
+        px="3"
+      >
+        <Icon as={icon} mr="2" w="4" h="4" />
+        {label}
+      </Link>
+    </motion.div>
   );
 };
 

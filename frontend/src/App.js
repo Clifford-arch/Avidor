@@ -1,11 +1,24 @@
+import { Flex } from "@chakra-ui/react";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ListScreen from "./screens/ListScreen";
 
 function App() {
   return (
     <>
       <Header />
-      <div style={{ height: "200px" }}></div>
+      <Flex
+        as="main"
+        mt="72px"
+        direction="column"
+        py="6"
+        px="6"
+        bgColor="#FAD6A5"
+      >
+        <ListScreen />
+      </Flex>
+
       <Footer />
     </>
   );
