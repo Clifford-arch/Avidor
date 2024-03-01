@@ -1,11 +1,13 @@
 import { Icon, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { Link as RouterLink } from "react-router-dom";
 
 const HeaderMenuItem = ({ url, label, icon }) => {
   return (
     <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
       <Link
-        href={url}
+        as={RouterLink}
+        to={url}
         fontSize="md"
         letterSpacing="wide"
         textTransform="uppercase"

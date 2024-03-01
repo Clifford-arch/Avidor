@@ -1,10 +1,15 @@
 import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 import Rating from "./Rating";
 
 const ProductCard = ({ product }) => {
   return (
-    <Link href={`/product/${product._id}`} _hover={{ textDecor: "none" }}>
+    <Link
+      as={RouterLink}
+      to={`/product/${product._id}`}
+      _hover={{ textDecor: "none" }}
+    >
       <Box borderRadius="md" bgColor="#800020" _hover={{ shadow: "md" }}>
         <Image
           src={product.image}
