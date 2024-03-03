@@ -34,7 +34,7 @@ const ProductScreen = () => {
 
         {/* Column 2 */}
         <Flex direction="column" mr="6rem">
-          <Heading as="h5" fontSize="base" color="gray.500">
+          <Heading as="h3" fontSize="2xl" color="#800020">
             {product.brand}
           </Heading>
 
