@@ -1,6 +1,7 @@
 {
   "name": "avidor",
   "version": "1.0.0",
+  "type": "module",
   "description": "Luxury Watch website.",
   "main": "server.js",
   "scripts": {
