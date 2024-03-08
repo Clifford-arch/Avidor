@@ -64,7 +64,7 @@ const ProductScreen = () => {
             my="4"
             color="red.600"
           >
-            ₹{product.price}
+            ${product.price}
           </Heading>
 
           <Text>{product.description}</Text>
@@ -81,7 +81,7 @@ const ProductScreen = () => {
         >
           <Flex justifyContent="space-between" py="2">
             <Text>Price: </Text>
-            <Text fontWeight="bold">₹{product.price}</Text>
+            <Text fontWeight="bold">${product.price}</Text>
           </Flex>
 
           <Flex justifyContent="space-between" py="2">
