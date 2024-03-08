@@ -5,9 +5,10 @@ const connectDB = async () => {
     const conn = await mongoose.connect(process.env.MONGO_URI);
     console.log(
       `MongoDB connected: ${mongoose.connection.client.s.options.dbName}`
+        .brightWhite.underline
     );
   } catch (err) {
-    console.error(`Error: ${err.message}`);
+    console.error(`Error: ${err.message}`.red.underline);
     process.exit(1);
   }
 };
