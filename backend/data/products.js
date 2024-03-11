@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Air Command",
     image: "/products/Blancpain-air-command.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "2",
     name: "Submariner Date",
     image: "/products/Rolex-Submariner-date.webp",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "3",
     name: "Code 11.59",
     image: "/products/Audemars-code.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "4",
     name: "Aquanaut",
     image: "/products/Patek-Philip-Aquanaut.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Date Just",
     image: "/products/Rolex-datejust.webp",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "6",
     name: "Nautilus",
     image: "/products/patek-philippe-nautilus.webp",
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "7",
     name: "Seamaster",
     image: "/products/Omega-Seamaster.jpg",
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "8",
     name: "Black Bay",
     image: "/products/Tudor-Black-Bay.jpg",
     description:
